@@ -1,38 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  background-color: #23252C;
+  font-family: Inter, sans-serif;
+}
+
 .App {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header {
+  background-color: #1A1B21;
+  color: #ffffff;
+  padding: 0 0 30px;
+  width: 317px;
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.header--image {
+  margin-bottom: 20px;
+}
+
+.header--name {
+  font-size: 25px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header--jobtitle {
+  color: #F3BF99;
+  font-size: 13px;
+  margin: 0;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header--weblink {
+  color: F5F5F5;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  border: none;
+  flex-basis: 30%;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 8px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn--email {
+  color: #374151;
+}
+
+.btn--linkedin {
+  background-color: #5093E2;
+  color: #ffffff;
+}
+
+.main {
+  background-color: #1A1B21;
+  color: #F5F5F5;
+  margin: 0 auto;
+  width: 317px;
+  padding: 0 48px 30px;
+}
+
+.main>h3 {
+  font-size: 16px;
+}
+
+.main>p {
+  font-size: 10.24px;
+  line-height: 15px;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 317px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: #161619;
+  padding: 30px 0;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.footer--icon-container {
+  background-color: #918E9B;
+  border-radius: 2px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
